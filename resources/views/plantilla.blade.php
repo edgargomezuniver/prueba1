@@ -31,7 +31,7 @@
         <a class="nav-link" href="/totals">totales<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/contacto">contactos<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/contact">contactos<span class="sr-only">(current)</span></a>
       </li>
       
     </ul>

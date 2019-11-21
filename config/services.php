@@ -34,6 +34,10 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+    'sendgrid' => [
+        'api_key' => env('SENDGRID_API_KEY'),
+    ],
+
     'stripe' => [
         'model' => App\User::class,
         'key' => env('STRIPE_KEY'),
@@ -44,11 +48,28 @@ return [
         ],
     ],
 
+    'github' => [
+    'client_id' => env(''),
+    'client_secret' => env(''),
+    'redirect' => '',
+    ],
+
+    'github' => [
+    'client_id' => env(''),
+    'client_secret' => env(''),
+    'redirect' => '',
+    ],
+
+    'github' => [
+    'client_id' => env('GITHUB_CLIENT_ID'),
+    'client_secret' => env('GITHUB_CLIENT_SECRET'),
+    'redirect' => 'http://your-callback-url',
+    ],
 
     'facebook' => [
-    'client_id' => env('2348450015283324'),                   //tu identificador de facebook
-    'client_secret' => env('8cd04967361cd517f636097c42425410'), //pass secret
-    'redirect' => 'http://localhost/login/facebook/callback',
+    'client_id' => env('FACEBOOK_ID'),                   //tu identificador de facebook
+    'client_secret' => env('FACEBOOK_SECRET'), //pass secret
+    'redirect' => env('FACEBOOK_url'),
     ],
 
 ];

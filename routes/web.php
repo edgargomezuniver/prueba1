@@ -8,14 +8,18 @@ Route::get('/', function () {
 
 
 
-Route::view('/contacto','contacto')->name('contacto');
+Route::view('/contact','contact')->name('contact');
+
+Route::post('contact','MessagesController@store');
+
 
 Route::view('/totals','totals')->name('totals');
 
 Route::resource('gastos','GastoController');
+
 Route::resource('ingresos','IngresoController');
 
-Route::post('contacto','MessagesController@store');
+
 
 Auth::routes();
 
@@ -24,3 +28,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('login/facebook', 'Auth\LoginController@redirectToProvider');
 Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('/home', 'HomeController@index');
+Route::get('/redirect', 'HomeController@redirect');
+Route::get('/callback', 'HomeController@callback');
