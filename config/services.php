@@ -48,13 +48,13 @@ return [
         ],
     ],
 
-    'github' => [
+    'google' => [
     'client_id' => env(''),
     'client_secret' => env(''),
     'redirect' => '',
     ],
 
-    'github' => [
+    '' => [
     'client_id' => env(''),
     'client_secret' => env(''),
     'redirect' => '',
@@ -67,7 +67,7 @@ return [
     ],
 
     'facebook' => [
-    'client_id' => env('FACEBOOK_ID'),                   //tu identificador de facebook
+    'client_id' => env('FACEBOOK_ID'),         //tu identificador de facebook
     'client_secret' => env('FACEBOOK_SECRET'), //pass secret
     'redirect' => env('FACEBOOK_url'),
     ],

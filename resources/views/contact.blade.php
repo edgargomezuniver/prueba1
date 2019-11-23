@@ -16,7 +16,7 @@
 
 <div class="container">
 	
-  <form method="POST" action="{{ route('contact') }}">
+  <form method="POST" action="/contacto">
 
   	@csrf
 

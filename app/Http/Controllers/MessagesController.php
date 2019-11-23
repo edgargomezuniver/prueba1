@@ -3,18 +3,19 @@
 namespace App\Http\Controllers;
 
 
+
 use App\Mail\MessageReceived;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
 
-//use App\Http\Controllers; use Mail;
 
 class MessagesController extends Controller
 {
-    public function store(Request $request)
+    public function store()
     {
 
-        request()->request([
+        request ()->validate([
 
          'nombre'=>'required',   
          'email'=>'required',
@@ -22,12 +23,9 @@ class MessagesController extends Controller
          'content'=>'required'
         ]);
     	
+       
 
-
-
-    	//Mail::to('chacota2012@gmail.com')->send(new MessageReceived);
-        //Mail::to('chacota2012@gmail.com')->send(new MessageReceived($request));
-    	
-        return 'mensaje enviados';
+Mail::to('chacota2012@gmail.com')->send(new MessageReceived($mensaje));
+    	return 'mensaje enviado';
     }
 }

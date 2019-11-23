@@ -18,7 +18,7 @@ Route::view('/totals','totals')->name('totals');
 Route::resource('gastos','GastoController');
 
 Route::resource('ingresos','IngresoController');
-
+Route::resource('/contacto','ContactoController');
 
 
 Auth::routes();
